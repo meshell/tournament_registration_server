@@ -6,9 +6,7 @@ use Behat\Behat\Context\ClosuredContextInterface,
     Behat\Behat\Exception\PendingException;
 use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
-
-require_once 'PHPUnit/Autoload.php';
-require_once 'PHPUnit/Framework/Assert/Functions.php';
+use PHPUnit\Framework\Assert;
 
 /**
  * Features context.
@@ -50,7 +48,7 @@ class FeatureContext extends BehatContext
      */
     public function theDummyShouldSay($arg1)
     {
-      assertSame($arg1, $this->result);
+        Assert::assertSame($arg1, $this->result);
     }
 
 }
