@@ -27,7 +27,8 @@
     "autoload": {
         "psr-4": {
             "TRS\\": "src/",
-            "TRS\\Tests\\": "tests/"
+            "TRS\\Tests\\": "tests/",
+            "PHPUnit\\": "vendor/phpunit/phpunit/src"
         }
     }
 }
