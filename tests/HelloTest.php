@@ -2,7 +2,7 @@
 
 class HelloTest extends \PHPUnit_Framework_TestCase
 {
-    protected $hello;
+    private $hello;
 
     public function setUp()
     {
