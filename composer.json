@@ -1,0 +1,26 @@
+{
+    "name": "tournament_registration_server",
+    "type": "library",
+    "license": "Apache 2.0",
+    "homepage": "https://github.com/meshell/tournament_registration_server",
+    "description": "tournament registration server",
+    "keywords": [],
+    "authors": [
+        {
+            "name": "Michel Estermann",
+            "email": "estermann.michel@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TRS\\": "src/",
+            "TRS\\Tests\\": "tests/"
+        }
+    }
+}
